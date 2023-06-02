@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li[class^="a"] {
+      background-color: skyblue;
+    }
+    li[class$="a"] {
+      background-color: orange;
+    }
+    li[class*="a"] {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="a-">11111</li>
+    <li class="cba">11111</li>
+    <li class="b-a">11111</li>
+    <li class="app">11111</li>
+  </ul>
+</body>
+</html>

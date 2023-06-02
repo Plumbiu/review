@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="handler1()">任务1</button>
+  <button onclick="handler2()">任务2</button>
+  <script>
+    function log(n) {
+      return () => {
+        console.log(n)
+      }
+    }
+    function handler1() {
+      setInterval(log(1), 500)
+    }
+    function handler2() {
+      setInterval(log(2), 500)
+    }
+  </script>
+</body>
+</html>

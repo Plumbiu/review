@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="container">
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+  </ul>
+  <div id="wrapper">
+    <p id="a">AAA</p>
+    <p>BBB</p>
+  </div>
+  <script>
+    const container = document.getElementById('container')
+    const li = document.createElement('li')
+    li.innerText = 444
+    container.appendChild(li)
+    const wrapper = document.getElementById('wrapper')
+    const a = document.getElementById('a')
+    wrapper.appendChild(a)
+  </script>
+</body>
+</html>

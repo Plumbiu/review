@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <div id="first">AAA</div>
+  </div>
+  <script>
+    console.log(document.parentElement) // null
+    console.log(document.documentElement.parentElement) // null
+    const container = document.getElementById('container')
+    const first = document.getElementById('first')
+    console.log(first.parentElement === container) // true
+  </script>
+</body>
+</html>

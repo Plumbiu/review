@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="lis">A</li>
+      <li class="lis"><p>B</p></li>
+      <li class="lis"><!-- Comment -->C</li>
+      <li class="lis">D</li>
+    </ul>
+    <script>
+      const e = document.createAttribute("id");
+      console.log(e.nodeType);
+      console.log(document.nodeType);
+      const lis = document.getElementsByClassName("lis");
+      Array.from(lis).forEach((item) => {
+        console.log(item.firstChild.nodeType);
+      });
+      function hello() {
+        
+      }
+    </script>
+  </body>
+</html>

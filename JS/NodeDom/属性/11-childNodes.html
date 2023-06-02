@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="container">
+    <li>AAA</li>
+    <li>BBB</li>
+    <li>CCC</li>
+  </ul>
+  <script>
+    const container = document.getElementById('container')
+    const childNodes = Array.from(container.childNodes)
+    console.log(childNodes.length) // 7
+    childNodes.forEach(item => {
+      console.log(item.textContent)
+    })
+  </script>
+</body>
+</html>
